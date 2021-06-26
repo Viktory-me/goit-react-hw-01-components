@@ -1,0 +1,8 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+}
