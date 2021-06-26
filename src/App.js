@@ -1,8 +1,10 @@
 import Profile from './components/Profile/Profile';
 import Container from './components/Container/Container';
 import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
 import statisticalData from './data/statistical-data.json';
 import user from './data/user.json';
+import friends from "./data/friends.json";
 
 export default function App () {
     return <div>
@@ -17,7 +19,7 @@ viewsQuantity={user.stats.views}
 likesQuantity={user.stats.likes}
 /> 
 <Statistics title="Upload stats" stats={statisticalData} />
-
+<FriendList friends={friends} />
 </Container>
 </div>;
 };
