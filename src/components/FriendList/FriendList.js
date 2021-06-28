@@ -1,27 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 import defaultAvatar from '../../images/default-avatar.svg';
-import s from './FriendList.css';
+import s from './FriendList.module.css';
 
 export default function FriendList(props){
     const { friends } = props;
     return (
-    <ul>
+        <section className={s.friends}>
+            <h2 className={s.title}>Friends</h2>
+    <ul className={s.friendsList}>
         {friends.map(
             ({avatar=defaultAvatar, name, isOnline, id}) =>
-            <li key={id}>
+            <li className={s.item} key={id}>
         <span className={isOnline ? s.online : s.offline}></span>
         <img  src={avatar} alt="" width="48" />
-        <p>{name}</p>
+        <p className={s.name}>{name}</p>
         </li> 
         )
         }
      </ul>
+     </section>
     );
 };
 
 FriendList.propTypes = {
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool,
+    friends: PropTypes.arrayOf(
+      PropTypes.shape({
+        avatar: PropTypes.string,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired,
+      })
+    ),
   };
+  

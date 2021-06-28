@@ -6,7 +6,7 @@ import s from './Profile.module.css';
 export default function Profile(props) {
     const { name, tag, location, followersQuantity, viewsQuantity, likesQuantity, avatar }= props;
     return (
-    <div className={s.profile} >
+    <section className={s.profile} >
       <div className={s.description}>
         <img
           src={avatar}
@@ -32,7 +32,7 @@ export default function Profile(props) {
           <span className={s.quantity}>{likesQuantity}</span>
         </li>
       </ul>
-    </div>
+    </section>
     );
   };
   

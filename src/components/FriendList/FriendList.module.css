@@ -1,0 +1,70 @@
+ul {
+    list-style: none;
+}
+.friends {
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 5px rgba(93, 228, 233, 0.3) ;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 3px 3px 3px 3px;
+}
+.friendsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px gray;
+}
+.item {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 10px 5px rgb(93 228 233 / 20%);
+    
+  }
+  .item:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+  .name {
+    color: white;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-shadow: 1px 1px 2px black;
+  }
+  .status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;}
+
+  .online {
+    composes: status;
+    background-color: rgb(66, 230, 139);
+  }
+  
+  .offline {
+    composes: status;
+    background-color: rgb(248, 46, 46);
+  }
