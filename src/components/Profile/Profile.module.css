@@ -51,7 +51,7 @@ ul {
     margin-right: auto;
     margin-bottom: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 10px 3px rgba(93, 228, 233, 0.3)
+    box-shadow: 0 0 10px 3px rgba(93, 228, 233, 0.3);
   }
 
   .stats {
