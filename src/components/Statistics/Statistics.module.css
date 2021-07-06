@@ -1,54 +1,54 @@
 .statistics {
-    display: inline-block;
-    text-align: center;
-    width: 320px;
-    border: 1px solid grey;
-    border-radius: 8px;
-    box-shadow: 0 0 10px 5px rgba(93, 228, 233, 0.3) ;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    padding: 3px 3px 3px 3px;
+  display: inline-block;
+  text-align: center;
+  width: 320px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 5px rgba(93, 228, 233, 0.3);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 3px 3px 3px 3px;
 }
 .statList {
- list-style: none;
- display: flex;
- justify-content: center;
- margin-left: auto;
- margin-right: auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title {
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px gray;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px gray;
 }
 .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    border: 1px solid grey;
-    width: 100%;
-    box-shadow: 0 0 10px 5px rgb(93 228 233 / 20%);
-    
-  }
-  .item:not(:first-child){
-  margin-left: 3px;}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  width: 100%;
+  box-shadow: 0 0 10px 5px rgb(93 228 233 / 20%);
+}
+.item:not(:first-child) {
+  margin-left: 3px;
+}
 
-  .label {
-    color: white;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px gray;
-  }
-  
-  .percentage {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    text-shadow: 1px 1px 2px gray;
-  }
+.label {
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.percentage {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px gray;
+}
